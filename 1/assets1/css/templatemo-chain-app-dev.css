@@ -33,6 +33,40 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #29cc00;
+  --secondary-color:              #007bf7;
+  --section-bg-color:             #f0f8ff;
+  --custom-btn-bg-color:          #0066CC;
+  --custom-btn-bg-hover-color:    #00CC99;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --border-color:                 #7fffd4;
+  --link-hover-color:             #0080ff;
+
+  --body-font-family:             'Montserrat', sans-serif;
+  --title-font-family:            'Sono', sans-serif;
+
+  --h1-font-size:                 58px;
+  --h2-font-size:                 46px;
+  --h3-font-size:                 32px;
+  --h4-font-size:                 28px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  16px;
+  --menu-font-size:               14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-light:            300;
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-semibold:         600;
+  --font-weight-bold:             700;
+}
 html,
 body,
 div,
@@ -1063,7 +1097,8 @@ Services Style
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  bottom: -300px;
+  bottom: 0px;
+  transform: translateY(40%);
   width: 261px;
   height: 368px;
   z-index: 0;
@@ -2281,4 +2316,54 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+/* custom block */
+.custom-block {
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.custom-block:hover {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.custom-block-info {
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 0;
+}
+
+/* profile block */
+.profile-block {
+  margin-top: 10px;
+}
+
+.profile-block-image {
+  border-radius: var(--border-radius-large);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.profile-block p strong {
+  display: block;
+  font-family: var(--title-font-family);
+}
+
+.profile-detail-block {
+  border: 1px solid #dee2e6;
+  border-radius: var(--border-radius-large);
+  padding: 25px 35px;
+}
+
+.profile-detail-block p {
+  margin-bottom: 0;
 }
