@@ -1,9 +1,3 @@
-/* 
----------------------------------------------
-Contact Style
---------------------------------------------- 
-*/
-
 .contact-us h2 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -25,7 +19,7 @@ Contact Style
   color: #03a9f4;
 }
 
-.contact-us {
+div.contact-us.section {
   margin-top: 160px;
   position: relative;
 }
@@ -50,10 +44,6 @@ Contact Style
   width: 103px;
   height: 464px;
   z-index: -1;
-}
-
-.contact-us .contact-us-content {
-
 }
 
 .contact-us .contact-us-content #contact-form {

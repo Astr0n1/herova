@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function updateSlideClasses() {
+    // Reset all slides to regular class
     document.querySelectorAll('.mySwiper .swiper-slide').forEach(function(slide) {
       var pricingItem = slide.querySelector('.pricing-item-regular, .pricing-item-pro');
       if (pricingItem) {
@@ -49,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    var activeSlide = swiper.slides[swiper.activeIndex];
+    // Get the active slide's real index
+    var activeSlide = swiper.slides[swiper.realIndex];
     var activePricingItem = activeSlide.querySelector('.pricing-item-regular, .pricing-item-pro');
     if (activePricingItem) {
       activePricingItem.classList.remove('pricing-item-regular');
@@ -57,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // Update classes on slide change
   swiper.on('slideChange', updateSlideClasses);
 
   // Set initial active slide class on load
