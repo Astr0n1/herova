@@ -94,8 +94,7 @@ body {
 }
 
 .section {
-  padding-top: 30px;
-  margin-top: 90px;
+  padding-top: 180px;
 }
 
 
@@ -1125,7 +1124,7 @@ Most Asked Style
   position: absolute;
   width: 103px;
   height: 464px;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .most-asked::after {
