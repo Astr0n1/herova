@@ -1119,24 +1119,29 @@ Most Asked Style
 
 .most-asked::before {
   content: url(../images/contact-left.jpg);
-  top: -60px;
+  visibility: hidden;
+  scale: 0.8;
+  top: 0px;
   left: 0;
   position: absolute;
   width: 103px;
-  height: 464px;
   z-index: -1;
 }
 
 .most-asked::after {
   content: url(../images/contact-left.jpg);
-  bottom: -90px;
+  scale: 0.8;
+  top: 600px;
   right: 0;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   position: absolute;
-  width: 103px;
-  height: 464px;
-  /* z-index: -1; */
+}
+@media (max-width:992px) {
+  .most-asked::before,
+  .most-asked::after{
+    display: none;
+  }
 }
 
 .most-asked .section-heading {

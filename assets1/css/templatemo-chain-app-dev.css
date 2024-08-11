@@ -2182,6 +2182,9 @@ responsive
   footer .section-heading h4 {
     color: #2a2a2a;
   }
+  .main-banner .left-content h2 {
+    font-size: var(--h3-font-size);
+  }
   footer #search {
     margin-bottom: 45px;
   }
@@ -2366,4 +2369,32 @@ header{
   position: fixed !important;
   top: 0;
   background-color: #fff !important;
+}
+.padding-remover{
+  padding-top: 0px !important;
+}
+@media (max-width:1000px) {
+  footer .links{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(50% - 25px));
+    gap: 50px;
+  }
+  footer .links .col-lg-3{
+    width: 100%;
+  }
+}
+@media (max-width:767px) {
+  footer .links{
+    display: flex;
+    grid-template-columns: repeat(auto-fill, calc(50% - 25px));
+    gap: unset;
+  }
+  footer input,
+  footer button{
+    box-shadow:0 0 12px #CCC
+  }
+  #modal_trigger{
+    width: 100%;
+    border-radius: 0;
+  }
 }
