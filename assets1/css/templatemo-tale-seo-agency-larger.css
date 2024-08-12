@@ -32,18 +32,29 @@ font & reset css
 Global Styles
 --------------------------------------------- 
 */
+:root{
+  --white-color: #ffffff;
+  --primary-color: #00e107;
+  --secondary-color: #009cfb;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #00e107;
+  --custom-btn-bg-hover-color: #009cfb;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --link-hover-color: #009CED;
+}
 html,
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 ::selection {
-  background: #5b03e4;
+  background: var(--primary-color);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #5b03e4;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -54,7 +65,7 @@ body {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -67,7 +78,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   color: #fff;
   opacity: 0.8;
 }
@@ -75,7 +86,7 @@ body {
 .second-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #c03afe;
+  background-color: var(--primary-color);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -88,7 +99,7 @@ body {
 }
 
 .second-button a:hover {
-  background-color: #c03afe;
+  background-color: var(--primary-color);
   color: #fff;
   opacity: 0.8;
 }
@@ -106,8 +117,7 @@ body {
   width: 60px;
   height: 2px;
   margin-bottom: 20px;
-  background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: var(--primary-color);
 }
 
 .section-heading h2 {
@@ -120,12 +130,12 @@ body {
 }
 
 .section-heading h2 em {
-  color: #5b03e4;
+  color: var(--primary-color);
   font-style: normal;
 }
 
 .section-heading h2 span {
-  color: #c03afe;
+  color: var(--primary-color);
 }
 
 /* 
@@ -201,7 +211,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #5b03e4;
+  background: var(--primary-color);
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -224,7 +234,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #5b03e4;
+  background: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -268,7 +278,7 @@ Banner Style
 
 .main-banner h6 {
   font-size: 20px;
-  color: #5b03e4;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -290,11 +300,11 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #5b03e4;
+  color: var(--primary-color);
 }
 
 .main-banner h4 span {
-  color: #c03afe;
+  color: var(--primary-color);
 }
 
 .main-banner p {
@@ -376,7 +386,7 @@ Services Style
 }
 
 .services .service-item:hover h4 {
-  color: #5b03e4;
+  color: var(--primary-color);
 }
 
 /* 
@@ -426,7 +436,7 @@ Projects Style
   position: absolute;
   right: 30px;
   top: 50%;
-  color: #5b03e4;
+  color: var(--primary-color);
   transform: translateY(-23px);
 }
 
@@ -446,7 +456,7 @@ Projects Style
   font-size: 24px;
   display: inline-block;
   color: #fff;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   border-radius: 50%;
   opacity: 0.5;
   transition: all .3s;
@@ -514,13 +524,13 @@ Infos Style
 
 .infos .main-content .skill-slide .fill {
   height: 10px;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
 .infos .main-content .skill-slide h6 {
   position: absolute;
-  color: #5b03e4;
+  color: var(--primary-color);
   font-size: 15px;
   left: 0;
   top: -25px;
@@ -528,7 +538,7 @@ Infos Style
 
 .infos .main-content .skill-slide span {
   position: absolute;
-  color: #5b03e4;
+  color: var(--primary-color);
   font-size: 15px;
   font-weight: 700;
   top: -25px;
@@ -651,7 +661,7 @@ Contact Style
 #contact-form button {
   border: none;
   height: 46px;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   width: 100%;
   border-radius: 23px;
   color: #fff;
@@ -706,7 +716,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #5b03e4;
+  color: var(--primary-color);
 }
 
 /* 
@@ -732,7 +742,7 @@ Page Heading Style
 
 .page-heading h6 {
   font-size: 20px;
-  color: #5b03e4;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -754,11 +764,11 @@ Page Heading Style
 
 .page-heading h4 em {
   font-style: normal;
-  color: #5b03e4;
+  color: var(--primary-color);
 }
 
 .page-heading h4 span {
-  color: #c03afe;
+  color: var(--primary-color);
 }
 
 .page-heading p {
@@ -809,7 +819,7 @@ Infos Style
   transform: translate(-23px, -23px);
   background-color: #fff;
   border-radius: 50%;
-  color: #5b03e4;
+  color: var(--primary-color);
   display: inline-block;
   text-align: center;
   width: 46px;
@@ -849,7 +859,7 @@ Infos Style
 
 .video-info .skill-slide .fill {
   height: 10px;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -964,7 +974,7 @@ Happy Clients Style
 }
 
 .happy-clients .naccs .menu div.active {
-  color: #5b03e4;
+  color: var(--primary-color);
 }
 
 .happy-clients ul.nacc {
@@ -996,7 +1006,7 @@ Happy Clients Style
 }
 
 .happy-clients ul.nacc li .line-dec {
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   width: 60px;
   height: 2px;
   margin-bottom: 25px;
@@ -1008,7 +1018,7 @@ Happy Clients Style
 
 .happy-clients ul.nacc li .info span {
   display: inline-block;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   border-radius: 20px;
   height: 40px;
   line-height: 40px;
@@ -1059,7 +1069,7 @@ CTA Style
 
 .cta .main-button a {
   background-color: #fff;
-  color: #5b03e4;
+  color: var(--primary-color);
   margin-top: 30px;
 }
 
@@ -1112,7 +1122,7 @@ Happy Steps Style
 Most Asked Style
 --------------------------------------------- 
 */
-
+/* 
 .most-asked {
   position: relative;
 }
@@ -1142,7 +1152,7 @@ Most Asked Style
   .most-asked::after{
     display: none;
   }
-}
+} */
 
 .most-asked .section-heading {
   margin-bottom: 80px;
@@ -1179,7 +1189,7 @@ Most Asked Style
 }
 
 .most-asked .accordion-head.is-open {
-  color: #5b03e4;
+  color: var(--primary-color);
   border-bottom: none;
 }
 
@@ -1233,7 +1243,7 @@ Most Asked Style
 #free-quote button {
   border: none;
   height: 46px;
-  background-color: #5b03e4;
+  background-color: var(--primary-color);
   width: 100%;
   border-radius: 23px;
   color: #fff;

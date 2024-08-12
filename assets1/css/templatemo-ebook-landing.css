@@ -693,7 +693,7 @@ strong {
 }
 
 .nav-pills {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius-medium);
   position: sticky;
   top: 120px;
@@ -712,7 +712,7 @@ strong {
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link.active, 
 .nav-pills .show>.nav-link {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--white-color);
 }
 
@@ -739,6 +739,8 @@ strong {
 .scrollspy-example-item h5 {
   padding-top: 30px;
   padding-bottom: 20px;
+  color: var(--primary-color);
+
 }
 
 .blockquote {
@@ -755,7 +757,7 @@ strong {
 
 .blockquote::before {
   content: "“";
-  color: var(--custom-btn-bg-color);
+  color: var(--primary-color);
   font-size: 100px;
   line-height: 1rem;
   display: block;
