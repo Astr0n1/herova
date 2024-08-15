@@ -622,7 +622,7 @@ strong {
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  background-image: url('../images/businessman-sitting-by-table-cafe.jpg');
+  /* background-image: url('../images/businessman-sitting-by-table-cafe.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -639,7 +639,7 @@ strong {
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.45);
+  /* background-color: rgba(0, 0, 0, 0.45); */
 }
 
 .custom-block .avatar-image {
@@ -1055,6 +1055,6 @@ strong {
 
 /* Edited  */
 section > .container{
-  padding-top: 130px;
+  padding-block: 130px;
 
 }

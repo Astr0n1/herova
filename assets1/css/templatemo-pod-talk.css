@@ -582,7 +582,8 @@ main {
   background-color: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   border-radius: var(--border-radius-large);
-  display: inline-block;
+  /* display: inline-block; */
+  display: none;
   margin: auto;
   margin-top: 40px;
   padding: 15px 25px;

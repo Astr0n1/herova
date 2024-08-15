@@ -76,6 +76,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+body{
+  height: 100vh;
+}
 
 /* clear fix */
 .grid:after {
@@ -1622,8 +1625,8 @@ footer {
   margin-top: 130px;
   padding-top: 300px;
   padding-bottom: 60px;
+  text-shadow: 0 0 7px #aeaeae;
 }
-
 footer .section-heading {
   margin-bottom: 45px;
 }
@@ -1752,11 +1755,13 @@ PopUp
 }
 
 .popupContainer {
+  border-radius: 15px;
   position: absolute;
-  width: 330px;
+  /* width: 330px; */
   height: auto;
-  left: 45%;
-  top: 60px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   background: #FFF;
 }
 
@@ -2128,6 +2133,7 @@ responsive
     text-align: center;
   }
   footer .section-heading h4 {
+    text-shadow: 0 0 white;
     color: #2a2a2a;
   }
   footer #search {
@@ -2315,7 +2321,7 @@ header{
   background-color: #fff !important;
 }
 .padding-remover{
-  padding-top: 0px !important;
+  padding: 0px !important;
 }
 @media (max-width:1000px) {
   footer .links{

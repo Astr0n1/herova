@@ -1,19 +1,44 @@
-.services .col > div{
+.services .col > div {
   margin-block: 30px;
 }
-.service-item{
+.service-item {
   align-items: center;
   display: flex;
   gap: 80px;
   justify-content: space-between;
 }
-.service-item img{
+.service-item img {
   flex-shrink: 0;
   width: unset;
   height: 300px;
 }
-@media (max-width:1000px) {
-  .services img{
+@media (max-width: 1000px) {
+  .services img {
     display: none;
+  }
+}
+.Co-founder {
+  margin-bottom: 100px;
+}
+.center-text {
+  text-align: center;
+}
+.margin-remover {
+  margin: 0px !important;
+}
+
+.previous-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  gap: 40px 5%;
+}
+@media (max-width: 1000px) {
+  .previous-works {
+    grid-template-columns: repeat(auto-fill, 47.5%);
+  }
+}
+@media (max-width: 500px) {
+  .previous-works {
+    grid-template-columns: repeat(auto-fill, 100%);
   }
 }

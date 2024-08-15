@@ -20,7 +20,7 @@
     <script src="slider/my_swiper.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="vendor1/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!--
 
 TemplateMo 570 Chain App Dev
@@ -36,13 +36,15 @@ https://templatemo.com/tm-570-chain-app-dev
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="assets1/css/customed.css">
+    <link rel="stylesheet" href="assets1/css/register.css">
+    <link rel="stylesheet" href="assets1/css/templatemo-tale-seo-agency-larger.css">
     <link rel="stylesheet" href="assets1/css/templatemo-pod-talk.css">
     <link rel="stylesheet" href="assets1/css/templatemo-chain-app-dev.css">
     <link rel="stylesheet" href="assets1/css/templatemo-tale-seo-agency.css">
     <link rel="stylesheet" href="assets1/css/animated.css">
     <link rel="stylesheet" href="assets1/css/owl.css">
     <link rel="stylesheet" href="slider/my_swiper.css">
-    <!-- <link rel="stylesheet" href="assets1/css/customed.css"> -->
   </head>
 
   <body>
@@ -78,7 +80,8 @@ https://templatemo.com/tm-570-chain-app-dev
                     class="active">Home</a></li>
                 <li class="scroll-to-section"><a
                     href="services.html">Services</a></li>
-                <li class="scroll-to-section"><a href="about.html">About</a></li>
+                <li class="scroll-to-section"><a
+                    href="about.html">About</a></li>
                 <li class="scroll-to-section"><a
                     href="pricing.html">Pricing</a></li>
                 <li class="scroll-to-section"><a
@@ -99,95 +102,52 @@ https://templatemo.com/tm-570-chain-app-dev
     <!-- ***** Header Area End ***** -->
 
     <div id="modal" class="popupContainer" style="display:none;">
-      <div class="popupHeader">
-        <span class="header_title">Login</span>
-        <span class="modal_close"><i class="fa fa-times"></i></span>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <section class="popupBody">
-        <!-- Social Login -->
-        <div class="social_login">
-          <div class>
-            <a href="#" class="social_box fb">
-              <span class="icon"><i class="fab fa-facebook"></i></span>
-              <span class="icon_title">Connect with Facebook</span>
-
-            </a>
-
-            <a href="#" class="social_box google">
-              <span class="icon"><i class="fab fa-google-plus"></i></span>
-              <span class="icon_title">Connect with Google</span>
-            </a>
-          </div>
-
-          <div class="centeredText">
-            <span>Or use your Email address</span>
-          </div>
-
-          <div class="action_btns">
-            <div class="one_half"><a href="#" id="login_form"
-                class="btn">Login</a></div>
-            <div class="one_half last"><a href="#" id="register_form"
-                class="btn">Sign up</a></div>
-          </div>
-        </div>
-
-        <!-- Username & Password Login form -->
-        <div class="user_login">
-          <form>
-            <label>Email / Username</label>
-            <input type="text" />
-            <br />
-
-            <label>Password</label>
-            <input type="password" />
-            <br />
-
-            <div class="checkbox">
-              <input id="remember" type="checkbox" />
-              <label for="remember">Remember me on this computer</label>
-            </div>
-
-            <div class="action_btns">
-              <div class="one_half"><a href="#" class="btn back_btn"><i
-                    class="fa fa-angle-double-left"></i> Back</a></div>
-              <div class="one_half last"><a href="#"
-                  class="btn btn_red">Login</a></div>
-            </div>
-          </form>
-
-          <a href="#" class="forgot_password">Forgot password?</a>
-        </div>
-
-        <!-- Register Form -->
-        <div class="user_register">
-          <form>
-            <label>Full Name</label>
-            <input type="text" />
-            <br />
-
-            <label>Email Address</label>
-            <input type="email" />
-            <br />
-
-            <label>Password</label>
-            <input type="password" />
-            <br />
-
-            <div class="checkbox">
-              <input id="send_updates" type="checkbox" />
-              <label for="send_updates">Send me occasional email updates</label>
-            </div>
-
-            <div class="action_btns">
-              <div class="one_half"><a href="#" class="btn back_btn"><i
-                    class="fa fa-angle-double-left"></i> Back</a></div>
-              <div class="one_half last"><a href="#"
-                  class="btn btn_red">Register</a></div>
-            </div>
-          </form>
-        </div>
-      </section>
     </div>
 
     <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s"
@@ -259,7 +219,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <p>You are not allowed to redistribute this template ZIP file on
                 any other website.</p>
               <div class="text-button">
-                <a href="#about">Read More <i class="fa fa-arrow-right"></i></a>
+                <a href="services-cards.html">Read More <i class="fa fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -270,7 +230,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <p>You are allowed to use the Chain App Dev HTML template. Feel
                 free to modify or edit this layout.</p>
               <div class="text-button">
-                <a href="#about">Read More <i class="fa fa-arrow-right"></i></a>
+                <a href="services-cards.html">Read More <i class="fa fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -282,7 +242,7 @@ https://templatemo.com/tm-570-chain-app-dev
                 <a rel="nofollow" href="https://paypal.me/templatemo"
                   target="_blank">a little via PayPal</a>. Thank you.</p>
               <div class="text-button">
-                <a href="#about">Read More <i class="fa fa-arrow-right"></i></a>
+                <a href="services-cards.html">Read More <i class="fa fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -293,7 +253,7 @@ https://templatemo.com/tm-570-chain-app-dev
               <p>Lorem ipsum dolor consectetur adipiscing elit sedder
                 williamsburg photo booth quinoa and fashion axe.</p>
               <div class="text-button">
-                <a href="#about">Read More <i class="fa fa-arrow-right"></i></a>
+                <a href="services-cards.html">Read More <i class="fa fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -314,25 +274,25 @@ https://templatemo.com/tm-570-chain-app-dev
             <div class="row">
               <div class="col-lg-6">
                 <div class="box-item">
-                  <h4><a href="#">Maintance Problems</a></h4>
+                  <h4><a >Maintance Problems</a></h4>
                   <p>Lorem Ipsum Text</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="box-item">
-                  <h4><a href="#">24/7 Support &amp; Help</a></h4>
+                  <h4><a >24/7 Support &amp; Help</a></h4>
                   <p>Lorem Ipsum Text</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="box-item">
-                  <h4><a href="#">Fixing Issues About</a></h4>
+                  <h4><a >Fixing Issues About</a></h4>
                   <p>Lorem Ipsum Text</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="box-item">
-                  <h4><a href="#">Co. Development</a></h4>
+                  <h4><a >Co. Development</a></h4>
                   <p>Lorem Ipsum Text</p>
                 </div>
               </div>
@@ -778,7 +738,7 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <div class="section-heading">
+            <div class="section-heading margin-remover">
               <h4>Who <em>we</em> Are</h4>
               <img src="assets1/images/heading-line-dec.png" alt>
               <p>At Chain , we are dedicated to transforming
@@ -792,8 +752,83 @@ https://templatemo.com/tm-570-chain-app-dev
       </div>
     </div>
 
+    <!-- Previous works -->
+    <div class="projects container section" id="projects">
+      <div class="container">
+        <div class="row center-text">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading">
+              <h4>Discover Our <em>Work</em> &amp; <span>Projects</span></h4>
+              <img src="assets1/images/heading-line-dec.png" alt>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                doers eiusmod.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="slider-buttons">
+            <div class="swiper-button-prev1">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="swiper-button-next1">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-12">
+            <div class="owl-features owl-carousel">
+              <div class="item">
+                <img src="assets1/images/projects-01.jpg" alt>
+                <div class="down-content">
+                  <h4>Digital Agency HTML Templates</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets1/images/projects-02.jpg" alt>
+                <div class="down-content">
+                  <h4>Admin Dashboard CSS Templates</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets1/images/projects-03.jpg" alt>
+                <div class="down-content">
+                  <h4>Best Responsive Website Layouts</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets1/images/projects-04.jpg" alt>
+                <div class="down-content">
+                  <h4>HTML CSS Layouts for your websites</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets1/images/projects-02.jpg" alt>
+                <div class="down-content">
+                  <h4>Bootstrap 5 Themes for Free</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets1/images/projects-03.jpg" alt>
+                <div class="down-content">
+                  <h4>Mobile Friendly Website Layouts</h4>
+                  <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Clients review -->
-    <div id="review" class="pricing-tables padding-remover">
+    <div id="review" class="pricing-tables ">
       <div class="container">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
@@ -948,84 +983,80 @@ https://templatemo.com/tm-570-chain-app-dev
 
     <!-- Contact Us -->
     <div class="contact-us section" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="contact-us-content">
-              <div class="row" style="justify-content: center;">
+      <div class="col-lg-12 container">
+        <div class="contact-us-content padding-remover  ">
+          <div class="row" style="justify-content: center;">
 
-                <div class="col-lg-8">
-                  <form id="contact-form" action method="post">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="section-heading">
-                          <h2><em>Contact Us</em> &amp; Get In
-                            <span>Touch</span></h2>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input type="name" name="name" id="name"
-                            placeholder="Your Name..." autocomplete="on"
-                            required>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input type="surname" name="surname" id="surname"
-                            placeholder="Your Surname..." autocomplete="on"
-                            required>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input type="text" name="email" id="email"
-                            pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..."
-                            required>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input type="subject" name="subject" id="subject"
-                            placeholder="Subject..." autocomplete="on">
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-12">
-                        <fieldset>
-                          <textarea name="message" id="message"
-                            placeholder="Your Message"></textarea>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-12">
-                        <fieldset>
-                          <button type="submit" id="form-submit"
-                            class="orange-button">Send Message Now</button>
-                        </fieldset>
-                      </div>
+            <div class="col-lg-12 ">
+              <form id="contact-form" action method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-heading">
+                      <h2><em>Contact Us</em> &amp; Get In
+                        <span>Touch</span></h2>
                     </div>
-                  </form>
-                  <div class="more-info">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="info-item">
-                          <i class="fa fa-phone"></i>
-                          <h4><a href="#">010-020-0340</a></h4>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="info-item">
-                          <i class="fa fa-envelope"></i>
-                          <h4><a href="#">info@company.com</a></h4>
-                          <h4><a href="#">hello@company.com</a></h4>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="info-item">
-                          <i class="fa fa-map-marker"></i>
-                          <h4><a href="#">Sunny Isles Beach, FL 33160, United
-                              States</a></h4>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="name" name="name" id="name"
+                        placeholder="Your Name..." autocomplete="on"
+                        required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="surname" name="surname" id="surname"
+                        placeholder="Your Surname..." autocomplete="on"
+                        required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="text" name="email" id="email"
+                        pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..."
+                        required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6">
+                    <fieldset>
+                      <input type="subject" name="subject" id="subject"
+                        placeholder="Subject..." autocomplete="on">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" id="message"
+                        placeholder="Your Message"></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit"
+                        class="orange-button">Send Message Now</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+              <div class="more-info">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="info-item">
+                      <i class="fa fa-phone"></i>
+                      <h4><a href="#">010-020-0340</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="info-item">
+                      <i class="fa fa-envelope"></i>
+                      <h4><a href="#">info@company.com</a></h4>
+                      <h4><a href="#">hello@company.com</a></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="info-item">
+                      <i class="fa fa-map-marker"></i>
+                      <h4><a href="#">Sunny Isles Beach, FL 33160, United
+                          States</a></h4>
                     </div>
                   </div>
                 </div>
@@ -1105,7 +1136,7 @@ https://templatemo.com/tm-570-chain-app-dev
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-lg-12">
             <div class="copyright-text">
@@ -1124,6 +1155,7 @@ https://templatemo.com/tm-570-chain-app-dev
     <script src="assets1/js/owl-carousel.js"></script>
     <script src="assets1/js/animation.js"></script>
     <script src="assets1/js/imagesloaded.js"></script>
+    <script src="assets1/js/register.js"></script>
     <script src="assets1/js/popup.js"></script>
     <script src="assets1/js/custom.js"></script>
   </body>

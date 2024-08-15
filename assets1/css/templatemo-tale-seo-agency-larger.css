@@ -32,7 +32,7 @@ font & reset css
 Global Styles
 --------------------------------------------- 
 */
-:root{
+:root {
   --white-color: #ffffff;
   --primary-color: #00e107;
   --secondary-color: #009cfb;
@@ -41,11 +41,11 @@ Global Styles
   --custom-btn-bg-hover-color: #009cfb;
   --dark-color: #000000;
   --p-color: #717275;
-  --link-hover-color: #009CED;
+  --link-hover-color: #009ced;
 }
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ::selection {
@@ -59,7 +59,8 @@ body {
 }
 
 .templatemo-feature {
-	max-width: 66px; border-radius: 50%;
+  max-width: 66px;
+  border-radius: 50%;
 }
 
 .main-button a {
@@ -72,7 +73,7 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
 }
@@ -93,7 +94,7 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
 }
@@ -107,7 +108,6 @@ body {
 .section {
   padding-top: 180px;
 }
-
 
 .section-heading {
   margin-bottom: 30px;
@@ -150,7 +150,7 @@ Pre-loader Style
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.99);
+  /* background-color: rgba(0,0,0,0.99); */
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -172,29 +172,29 @@ Pre-loader Style
 
 @-webkit-keyframes dot {
   50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
+    -webkit-transform: translateX(96px);
+    transform: translateX(96px);
   }
 }
 
 @keyframes dot {
   50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
+    -webkit-transform: translateX(96px);
+    transform: translateX(96px);
   }
 }
 
 @-webkit-keyframes dots {
   50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
+    -webkit-transform: translateX(-31px);
+    transform: translateX(-31px);
   }
 }
 
 @keyframes dots {
   50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
+    -webkit-transform: translateX(-31px);
+    transform: translateX(-31px);
   }
 }
 
@@ -237,8 +237,6 @@ Pre-loader Style
   background: var(--primary-color);
   border-radius: 50%;
 }
-
-
 
 /* 
 ---------------------------------------------
@@ -331,7 +329,7 @@ Banner Style
 Services Style
 --------------------------------------------- 
 */
-
+/* 
 .services {
   position: relative;
   overflow: hidden;
@@ -387,7 +385,7 @@ Services Style
 
 .services .service-item:hover h4 {
   color: var(--primary-color);
-}
+} */
 
 /* 
 ---------------------------------------------
@@ -400,6 +398,7 @@ Projects Style
 }
 
 .projects .container-fluid {
+  position: relative;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -407,14 +406,18 @@ Projects Style
 .projects .item {
   border-radius: 23px;
   overflow: hidden;
+  height: fit-content;
 }
 
 .projects .item .down-content {
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #f3d7ff;
   border-radius: 0px 0px 23px 23px;
   padding: 30px;
   position: relative;
+  height: 130px;
 }
 
 .projects .item .down-content h4 {
@@ -442,10 +445,14 @@ Projects Style
 
 .projects .owl-nav {
   position: absolute;
-  max-width: 1320px;
-  top: -126px;
-  right: 16%;
+  z-index: 2;
+  width: 95%;
+  left: 2.5%;
+  margin-inline: auto;
+  top: 40%;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects .owl-nav .owl-prev span,
@@ -459,7 +466,7 @@ Projects Style
   background-color: var(--primary-color);
   border-radius: 50%;
   opacity: 0.5;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .projects .owl-nav .owl-next span {
@@ -609,7 +616,7 @@ Contact Style
   border-radius: 23px;
   padding: 60px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us .contact-us-content #contact-form {
@@ -665,7 +672,7 @@ Contact Style
   width: 100%;
   border-radius: 23px;
   color: #fff;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 #contact-form button:hover {
@@ -674,8 +681,12 @@ Contact Style
 
 .contact-us-content .more-info {
   text-align: center;
-  background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: rgb(85, 0, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 0, 227, 1) 0%,
+    rgba(198, 61, 255, 1) 100%
+  );
   border-radius: 0px 0px 23px 23px;
   padding: 45px 30px 15px 30px;
 }
@@ -712,7 +723,7 @@ footer p {
 
 footer p a {
   color: #2a2a2a;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 footer p a:hover {
@@ -808,7 +819,7 @@ Infos Style
   position: relative;
   border-radius: 23px;
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-top: -60px;
 }
 
@@ -1167,13 +1178,12 @@ Most Asked Style
 }
 
 .most-asked .accordion-head {
-  padding: 35px 0px !important;  
+  padding: 35px 0px !important;
   font-size: 22px;
   font-weight: 700;
   color: #2a2a2a;
   cursor: pointer;
   transition: color 200ms ease-in-out;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -1212,7 +1222,7 @@ Most Asked Style
 
 .most-asked #free-quote {
   border-radius: 23px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 60px;
   margin-left: 45px;
   background-color: #fff;
@@ -1247,7 +1257,7 @@ Most Asked Style
   width: 100%;
   border-radius: 23px;
   color: #fff;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 #free-quote button:hover {
@@ -1283,7 +1293,7 @@ body {
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
-  .main-banner  {
+  .main-banner {
     padding: 185px 0px;
   }
   .main-banner h4 {
@@ -1386,7 +1396,7 @@ body {
     border-right: none;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
   .happy-steps .steps .last-item {
     border-bottom: none;
@@ -1423,6 +1433,13 @@ body {
   }
 }
 /* edited */
-.most-asked .row{
+.most-asked .row {
   position: relative;
+}
+
+.container-fluid .slider-buttons {
+  top: 40%;
+}
+.slider-buttons i {
+  box-shadow: 0px 0px 14px #4b4b4b;
 }

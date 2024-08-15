@@ -69,6 +69,11 @@ div.contact-us.section {
   font-weight: 600;
   margin-bottom: 15px;
 }
+@media (max-width:600px) {
+  .contact-us .contact-us-content #contact-form {
+    padding-inline:20px;
+  }
+}
 
 #contact-form input::placeholder {
   color: #2a2a2a;
