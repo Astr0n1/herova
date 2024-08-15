@@ -7,6 +7,9 @@
   gap: 80px;
   justify-content: space-between;
 }
+.services.section .service-item {
+  display: block;
+}
 .service-item img {
   flex-shrink: 0;
   width: unset;
