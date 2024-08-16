@@ -439,10 +439,12 @@ Projects Style
   position: absolute;
   right: 30px;
   top: 50%;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   transform: translateY(-23px);
 }
-
+.fa-link:before {
+color: var(--primary-color) !important;
+}
 .projects .owl-nav {
   position: absolute;
   z-index: 2;
@@ -1198,8 +1200,10 @@ Most Asked Style
   transition: transform 200ms ease-in-out;
 }
 
-.most-asked .accordion-head.is-open {
-  color: var(--primary-color);
+.most-asked .accordion-head.is-open,
+.most-asked .accordion-head.is-open span ,
+.most-asked .accordion-head.is-open i {
+  color: var(--primary-color) !important;
   border-bottom: none;
 }
 

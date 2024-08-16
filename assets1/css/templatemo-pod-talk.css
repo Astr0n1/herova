@@ -106,7 +106,7 @@ p {
   font-weight: var(--font-weight-light);
 }
 #review p {
-  color: var(--p-color) !important;
+  color: var(--p-color) ;
   font-size: var(--p-font-size) !important;
   font-weight: var(--font-weight-light) !important;
 }

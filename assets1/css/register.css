@@ -78,6 +78,7 @@
 #modal input {
   background-color: #eee;
   border: none;
+  border-radius: 10px;
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
@@ -285,4 +286,24 @@
   .social-container{
     margin: 0;
   }
+}
+
+/* dark-theme */
+.dark-mode #modal button.ghost {
+  border-color: #ffffff;
+}
+.dark-mode #modal form {
+  background-color: #333;
+}
+
+.dark-mode #modal input {
+  background-color: #eee;
+}
+
+.dark-mode #modal .container {
+  background-color: #333;
+}
+
+.dark-mode #modal a {
+color: #aaa;
 }

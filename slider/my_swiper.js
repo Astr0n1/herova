@@ -57,6 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
       current.classList.add("pricing-item-regular")
       current.classList.remove("pricing-item-pro")
     }
+    //reset next slide
+    var current=document.querySelector(".swiper-slide-next .pricing-item-pro");
+    if (current){
+      current.classList.add("pricing-item-regular")
+      current.classList.remove("pricing-item-pro")
+    }
   }
 
   // Set initial active slide class on load

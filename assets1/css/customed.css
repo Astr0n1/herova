@@ -45,3 +45,60 @@
     grid-template-columns: repeat(auto-fill, 100%);
   }
 }
+/* Dark theme */
+.dark-mode *,
+.dark-mode #review p {
+  color: white;
+}
+.dark-mode,
+.dark-mode header.header-area,
+.dark-mode .service-item,
+.dark-mode .projects .item .down-content {
+  background-color: #333 !important;
+  outline: 1px solid #888;
+}
+.dark-mode .about-us::after,
+.dark-mode .services:after,
+.dark-mode .about-us .box-item,
+.dark-mode .border-button a,
+.dark-mode .custom-block:hover {
+  background: unset !important;
+}
+.dark-mode .contact-us .contact-us-content {
+  background: #222 !important;
+  border-radius: 22px;
+}
+.dark-mode .contact-us .contact-us-content #contact-form  {
+  border-color: #555 !important;
+}
+.dark-mode #contact-form input,
+.dark-mode #contact-form textarea ,
+.dark-mode .nav-pills .nav-link,
+.dark-mode .blockquote,
+.dark-mode .pricing-item-regular {
+  background: #505055;
+  resize: none;
+}
+.dark-mode #contact-form input::placeholder,
+.dark-mode #contact-form textarea::placeholder,
+.dark-mode .nav-pills .nav-link {
+  color: #ddd;
+}
+.dark-mode .section-heading h4 ,
+.dark-mode .header-area .main-nav .nav li a:not(.active) ,
+.dark-mode .header-area .main-nav .nav li.submenu:after ,
+.dark-mode .background-header .main-nav .nav li.submenu:after ,
+.dark-mode .header-area .main-nav .nav li.submenu ul li a:not(.active) ,
+.dark-mode,
+.main-banner .left-content p ,
+.dark-mode .about-us .box-item h4 a ,
+.dark-mode .menu .thumb h4,
+.dark-mode .the-clients .nacc .thumb .down-content .right-content span,
+.dark-mode .btn_red:hover,
+.dark-mode .section-heading h2,
+.dark-mode .projects .item .down-content h4 {
+  color: #E4E4E2 !important;
+}
+.dark-mode .btn_red:hover{
+  background: #2a2a2a;
+}

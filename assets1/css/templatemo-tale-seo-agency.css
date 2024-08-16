@@ -10,6 +10,10 @@
   line-height: 44px;
 }
 
+.dark-mode .contact-us h2{
+  color: white;
+}
+
 .section-heading h2 em {
   color: #2fdf00;
   font-style: normal;
@@ -20,7 +24,7 @@
 }
 
 div.contact-us.section {
-  margin-top: 160px;
+  padding-top: 160px;
   position: relative;
 }
 

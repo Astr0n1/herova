@@ -44,7 +44,8 @@ reset
   --p-color: #717275;
   --border-color: #7fffd4;
   --link-hover-color: #0080ff;
-
+  --light-text: #2a2a2a;
+  --dark-text:white;
   --body-font-family: "Montserrat", sans-serif;
   --title-font-family: "Sono", sans-serif;
 
@@ -77,7 +78,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 body{
-  height: 100vh;
+  height: 100%;
 }
 
 /* clear fix */
