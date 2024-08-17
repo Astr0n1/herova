@@ -45,15 +45,88 @@
     grid-template-columns: repeat(auto-fill, 100%);
   }
 }
+header .container {
+  max-width: 90% !important;
+}
+@media (max-width: 350px) {
+  .header-area {
+    padding: 0px;
+  }
+  header .container {
+    max-width: 100% !important;
+  }
+  .header-area .logo {
+    margin-left: 20px;
+  }
+}
+/* theme button */
+#theme {
+  position: relative;
+  top: 23px;
+  left: 30px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 6px 8px 1px gray;
+  transition: 0.5s ease-in-out;
+}
+.background-header #theme {
+  transform: translateY(-8px);
+}
+@media (max-width: 825px) {
+  #theme {
+    left: 10px;
+  }
+}
+.dark-mode #theme {
+  background: linear-gradient(-135deg, #555, #2a2a2a);
+  box-shadow: -2px 6px 8px 1px #88888842;
+}
+.dark-mode #theme .dark {
+  display: none;
+}
+#theme .dark {
+  fill: black;
+}
+body:not(.dark-mode) #theme {
+  background: linear-gradient(-135deg, #fff, #eee);
+}
+body:not(.dark-mode) #theme .light {
+  display: none;
+}
+#theme .light {
+  fill: rgb(243, 243, 204);
+}
 /* Dark theme */
 .dark-mode *,
-.dark-mode #review p {
+.dark-mode #review {
   color: white;
 }
+
+.dark-mode .header-area .main-nav .menu-trigger span,
+.dark-mode .header-area .main-nav .menu-trigger span:before,
+.dark-mode .header-area .main-nav .menu-trigger span:after {
+  background: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .dark-mode .header-area .main-nav .nav li,
+  .dark-mode .header-area .main-nav .nav li a {
+    background-color: #555 !important;
+  }
+}
+
 .dark-mode,
 .dark-mode header.header-area,
 .dark-mode .service-item,
 .dark-mode .projects .item .down-content {
+  transition: 0.5s ease-in-out;
   background-color: #333 !important;
   outline: 1px solid #888;
 }
@@ -66,39 +139,44 @@
 }
 .dark-mode .contact-us .contact-us-content {
   background: #222 !important;
+  transition: 0.5s ease-in-out;
   border-radius: 22px;
 }
-.dark-mode .contact-us .contact-us-content #contact-form  {
+.dark-mode .contact-us .contact-us-content #contact-form {
   border-color: #555 !important;
+  transition: 0.5s ease-in-out;
 }
 .dark-mode #contact-form input,
-.dark-mode #contact-form textarea ,
+.dark-mode #contact-form textarea,
 .dark-mode .nav-pills .nav-link,
 .dark-mode .blockquote,
 .dark-mode .pricing-item-regular {
   background: #505055;
+  transition: 0.5s ease-in-out;
   resize: none;
 }
 .dark-mode #contact-form input::placeholder,
 .dark-mode #contact-form textarea::placeholder,
 .dark-mode .nav-pills .nav-link {
   color: #ddd;
+  transition: 0.5s ease-in-out;
 }
-.dark-mode .section-heading h4 ,
-.dark-mode .header-area .main-nav .nav li a:not(.active) ,
-.dark-mode .header-area .main-nav .nav li.submenu:after ,
-.dark-mode .background-header .main-nav .nav li.submenu:after ,
-.dark-mode .header-area .main-nav .nav li.submenu ul li a:not(.active) ,
+.dark-mode .section-heading h4,
+.dark-mode .header-area .main-nav .nav li a:not(.active),
+.dark-mode .header-area .main-nav .nav li.submenu:after,
+.dark-mode .background-header .main-nav .nav li.submenu:after,
+.dark-mode .header-area .main-nav .nav li.submenu ul li a:not(.active),
 .dark-mode,
-.main-banner .left-content p ,
-.dark-mode .about-us .box-item h4 a ,
+.main-banner .left-content p,
+.dark-mode .about-us .box-item h4 a,
 .dark-mode .menu .thumb h4,
 .dark-mode .the-clients .nacc .thumb .down-content .right-content span,
 .dark-mode .btn_red:hover,
 .dark-mode .section-heading h2,
 .dark-mode .projects .item .down-content h4 {
-  color: #E4E4E2 !important;
+  color: #e4e4e2 !important;
+  transition: 0.5s ease-in-out;
 }
-.dark-mode .btn_red:hover{
+.dark-mode .btn_red:hover {
   background: #2a2a2a;
 }
