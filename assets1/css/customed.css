@@ -179,7 +179,8 @@ body:not(.dark-mode) #theme .light {
 .dark-mode .the-clients .nacc .thumb .down-content .right-content span,
 .dark-mode .btn_red:hover,
 .dark-mode .section-heading h2,
-.dark-mode .projects .item .down-content h4 {
+.dark-mode .projects .item .down-content h4,
+.dark-mode .main-banner .left-content h2 {
   color: #e4e4e2 !important;
   transition: 0.5s ease-in-out;
 }
