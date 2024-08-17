@@ -238,7 +238,7 @@
   #modal .container {
     width: 90vw;
     height: 1000px;
-    max-height: 90vh;
+    max-height: 90dvh;
   }
 
   #moadl .form-container {
@@ -255,6 +255,18 @@
   #modal .container.right-panel-active .sign-in-container {
     transform: translate(0, 100%);
   }
+  @media (max-height: 900px) {
+    #modal .container.right-panel-active .sign-up-container,
+    #modal .container.right-panel-active .sign-in-container {
+      transform: translate(0, 80%);
+    }
+    #modal .form-container {
+    top: 5%;
+    }
+    .container.right-panel-active .sign-in-container{
+      opacity: 0;
+    }
+  }
   #modal .overlay-container {
     width: 100%;
     height: 50%;
@@ -267,11 +279,11 @@
   #modal .overlay-right {
     color: white;
   }
-  .overlay-right{
+  .overlay-right {
     opacity: 1;
     transition: 0.15s ease-in;
   }
-  .overlay-left{
+  .overlay-left {
     opacity: 0;
     transition: 0.15s ease-in;
   }
@@ -282,9 +294,16 @@
     opacity: 1;
   }
 }
-@media (max-height:900px){
-  .social-container{
+@media (max-height: 900px) {
+  .social-container {
     margin: 0;
+  }
+  #modal .overlay-container {
+    height: 40%;
+    top: 60%;
+  }
+  .container.right-panel-active .overlay-container {
+    transform: translate(0, -150%);
   }
 }
 
@@ -305,5 +324,5 @@
 }
 
 .dark-mode #modal a {
-color: #aaa;
+  color: #aaa;
 }

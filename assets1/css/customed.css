@@ -150,10 +150,16 @@ body:not(.dark-mode) #theme .light {
 .dark-mode #contact-form textarea,
 .dark-mode .nav-pills .nav-link,
 .dark-mode .blockquote,
-.dark-mode .pricing-item-regular {
+.dark-mode .pricing-item-regular{
   background: #505055;
   transition: 0.5s ease-in-out;
   resize: none;
+}
+
+.dark-mode .js-preloader,
+.dark-mode .preloader-inner {
+  background-color: #333;
+  transition: 0s;
 }
 .dark-mode #contact-form input::placeholder,
 .dark-mode #contact-form textarea::placeholder,
